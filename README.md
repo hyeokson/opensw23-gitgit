@@ -1,8 +1,8 @@
 # Assignment Day 1
 
 • Team Introduction
-   name : 손찬혁
-   ID : 201713061
+   '\n'name : 손찬혁
+   '\n'ID : 201713061
    
 • Topic Introduction
 
