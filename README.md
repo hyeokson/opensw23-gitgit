@@ -49,6 +49,9 @@ git clone https://github.com/hyeokson/opensw23-gitgit.git
 ```
 ### 2. python library 설치하기
 (recommended) python 가상환경을 생성하고 library 설치
+
+cmd에서 실행
+
 - torch
 - torchvision
 - torchaudio
