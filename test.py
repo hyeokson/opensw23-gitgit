@@ -25,6 +25,8 @@ import file_utils
 import json
 import zipfile
 
+import warnings
+
 from craft import CRAFT
 
 from collections import OrderedDict
@@ -120,9 +122,9 @@ def test_net(net, image, text_threshold, link_threshold, low_text, cuda, poly, r
 
 
 if __name__ == '__main__':
-    # load net
-    net = CRAFT()     # initialize
 
+    warnings.filterwarnings("ignore", category=UserWarning)
+    net = CRAFT()
     print('Loading weights from checkpoint (' + args.trained_model + ')')
     if args.cuda:
         net.load_state_dict(copyStateDict(torch.load(args.trained_model)))
