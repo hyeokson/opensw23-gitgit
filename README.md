@@ -23,11 +23,11 @@ CRAFT text detector는 딥러닝을 이용한 텍스트 검출기 입니다. tex
 
 ## • Installation
     
-1. git repository clone 하기
+### 1. git repository clone 하기
 ```
 git clone https://github.com/hyeokson/opensw23-gitgit.git
 ```
-2. python library 설치하기
+### 2. python library 설치하기
 - torch
 - torchvision
 - torchaudio
@@ -37,7 +37,7 @@ git clone https://github.com/hyeokson/opensw23-gitgit.git
 ```
 pip install torch torchvision torchaudio opencv-python numpy scipy
 ```
-3. pretrained model로 실행하기
+### 3. pretrained model로 실행하기
 ```
 python test.py --trained_model=[weightfile] --test_folder=[folder path to test images]
 ```
