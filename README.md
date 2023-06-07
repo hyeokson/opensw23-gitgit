@@ -30,6 +30,13 @@ text detector에 적용된 CRAFT 모델은 Scene text detection, 즉 문자의 �
     
 ![coordinates](https://github.com/hyeokson/opensw23-gitgit/assets/127181634/6bb4e57d-aa35-4458-96d6-4bd8a67cf1a4)
 
+<details markdown="1">
+<summary>Additional Results</summary>
+
+<!--summary 아래 빈칸 공백 두고 내용을 적는공간-->
+
+</details>
+
 ## • Analysis/Visualization
 
 ## • Installation
