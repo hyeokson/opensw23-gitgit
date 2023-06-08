@@ -18,23 +18,9 @@ text detector에 적용된 CRAFT 모델은 Scene text detection, 즉 문자의 �
     
 ## • Results
 
-총 12개의 데이터를 실행해 보았습니다.
-Model은 General Model을 사용했습니다.
+총 11개의 데이터를 실행했고 Model은 General Model을 사용했습니다.
 
-### • Input
-![AKR20200325003700091_01_i_P4](https://github.com/hyeokson/opensw23-gitgit/assets/127181634/f574204e-643e-43ef-afb0-35caed9c6f22)
-
-### • Output
-#### <result image, score map, bounding box coordinates>
-
-![res_AKR20200325003700091_01_i_P4](https://github.com/hyeokson/opensw23-gitgit/assets/127181634/111ea7c7-4b23-419e-ac87-9a7b0aad5f96)
-
-![res_AKR20200325003700091_01_i_P4_mask](https://github.com/hyeokson/opensw23-gitgit/assets/127181634/3045e974-cdc0-453e-a3d6-5577c4ef1768)
-    
-![coordinates](https://github.com/hyeokson/opensw23-gitgit/assets/127181634/6bb4e57d-aa35-4458-96d6-4bd8a67cf1a4)
-
-<details markdown="1">
-<summary>Additional Results</summary>
+Model을 사용했을때 출력되는 Detection Box coordinates, Score map은 생략했습니다.
 
 ### • Input(data 1)
 
@@ -51,6 +37,9 @@ Model은 General Model을 사용했습니다.
 ### • Output(data 1 - link_confidence=0.9)
 
 ![res_KakaoTalk_20230607_223520892_06](https://github.com/hyeokson/opensw23-gitgit/assets/127181634/804ec884-3452-422a-b52e-886dd706372f)
+
+<details markdown="1">
+<summary>Additional Results</summary>
 
 ### • Input(data 2)
 
