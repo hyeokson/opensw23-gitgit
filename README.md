@@ -214,15 +214,14 @@ original setting, text_threshold 값을 0.9로 설정, link_threshold 값을 0.9
 ![image](https://github.com/hyeokson/opensw23-gitgit/assets/127181634/72976867-0df3-422d-ae94-d643eabdf4f8)
 ![image](https://github.com/hyeokson/opensw23-gitgit/assets/127181634/15dbf48e-f48d-4d80-b9e2-42274cbe1960)
 
-수평방향의 텍스트는 단어가 굉장히 많음에도 1개의 단어를 빼고는 Text Detection을 잘 수행하는 것을 볼 수 있다. 30도 정도 기울어진 텍스트 또한 2개 정도의 단어 빼고는 Text Detection을 잘 수행하는 것을 볼 수 있다. 보통은 텍스트들이 가로방향으로 되어 있기 때문에 Model을 학습할 때 사용된 data set도 가로방향이 많았을 것이고 이러한 이유 때문에 가로방향의 텍스트들은 Text Detection이 잘 수행되는 것이라고 추측할 수 있다.
-
+수평방향의 텍스트는 단어가 굉장히 많음에도 1개의 단어를 빼고는 Text Detection을 잘 수행하는 것을 볼 수 있습니다. 30도 정도 기울어진 텍스트 또한 2개 정도의 단어 빼고는 Text Detection을 잘 수행하는 것을 볼 수 있습니다. 보통은 텍스트들이 가로방향으로 되어 있기 때문에 Model을 학습할 때 사용된 data set도 가로방향이 많았을 것이고 이러한 이유 때문에 가로방향의 텍스트들은 Text Detection이 잘 수행되는 것이라고 추측할 수 있습니다.
 2. Vertical Text
 
 ![image](https://github.com/hyeokson/opensw23-gitgit/assets/127181634/fa6bd7b0-76f3-4bad-8c78-bb7162f107ec)
 ![image](https://github.com/hyeokson/opensw23-gitgit/assets/127181634/c4d13d2e-b8c4-4a50-a43e-329b7261b7d0)
 
 
-세로방향의 텍스트들도 곧잘 Detection 되는 것을 볼 수 있다. 하지만 가로 방향의 텍스트들은 글자가 작아도 단어별로 잘 Detection 되는 반면에, 세로방향의 텍스트는 글자가 작으면 단어별로 잘 묶지 못한다는 것을 알 수 있다. 그리고 오른쪽에 있는 이미지를 보면 한자 또한 text로 잘 인식이 된다는 것을 알 수 있다.
+세로방향의 텍스트들도 곧잘 Detection 되는 것을 볼 수 있습니다. 하지만 가로 방향의 텍스트들은 글자가 작아도 단어별로 잘 Detection 되는 반면에, 세로방향의 텍스트는 글자가 작으면 단어별로 잘 묶지 못한다는 것을 알 수 있습니다. 그리고 아래에 있는 이미지를 보면 한자 또한 text로 잘 인식이 된다는 것을 알 수 있습니다.
 
 3. Curved Text
 
@@ -230,25 +229,25 @@ original setting, text_threshold 값을 0.9로 설정, link_threshold 값을 0.9
 ![image](https://github.com/hyeokson/opensw23-gitgit/assets/127181634/93d8f86f-5c29-43ad-95b4-e65f5e321a8b)
 
 
-왼쪽의 이미지를 보면 커브 방향으로 배치된 text들도 잘 Detection 되는 것을 볼 수 있다. 하지만 오른쪽 이미지를 보면 정면에서 보이는 curved text들은 Detection 되지만, 곡면에 위치한 왼쪽, 오른쪽 curved text들은 Detection되지 않는다는 것을 볼 수 있다. 또한, 단어간 간격이 너무 넓으면 하나의 단어로 묶이지 않는다는 것을 알 수 있다.
+첫번째 이미지를 보면 커브 방향으로 배치된 text들도 잘 Detection 되는 것을 볼 수 있습니다. 하지만 두번째 이미지를 보면 정면에서 보이는 curved text들은 Detection 되지만 곡면에 위치한 왼쪽, 오른쪽 curved text들은 Detection되지 않는다는 것을 볼 수 있습니다. 또한, 단어간 간격이 너무 넓으면 하나의 단어로 묶이지 않는다는 것을 알 수 있습니다.
 
 4. Text With (text_threshold=0.9) 
 
 ![image](https://github.com/hyeokson/opensw23-gitgit/assets/127181634/2239240c-b733-452e-a78d-d0ac0b5c8a40)
 
-text_threshold 변수는 이미지의 text를 text로 인식하는 기준이 되는 threshold 값이다. Original text_threshold값은 0.7이고, 실험에서는 0.9로 설정하고 실행했다. 위의 그래프를 보면 text_threshold값을 높였을 때 original 값일 때보다 Detection Box의 수가 줄어든다는 것을 알 수 있다. 이미지에 있는 text를 text로 인식하는 기준이 높아졌기 때문에 text가 이미지에서 선명하게 보이지 않으면 Detection이 잘 되지 않는다는 것을 알 수 있다. 따라서 확실하게 text로 보이는 text만 Detection하고 싶다면 text_threshold 값을 높여서 사용하는 것이 좋고, 가능한 한 모든 text들을 Detection하고 싶다면 text_threshold 값을 낮추는 것을 추천한다. 
+text_threshold 변수는 이미지의 text를 text로 인식하는 기준이 되는 threshold 값입니다. Original text_threshold값은 0.7이고, 실험에서는 0.9로 설정하고 실행했습니다. 위의 그래프를 보면 text_threshold값을 높였을 때 original 값일 때보다 Detection Box의 수가 줄어든다는 것을 알 수 있습니다. 이미지에 있는 text를 text로 인식하는 기준이 높아졌기 때문에 text가 이미지에서 선명하게 보이지 않으면 Detection이 잘 되지 않는다는 것을 알 수 있습니다. 따라서 확실하게 text로 보이는 text만 Detection하고 싶다면 text_threshold 값을 높여서 사용하는 것이 좋고, 가능한 한 모든 text들을 Detection하고 싶다면 text_threshold 값을 낮추는 것을 추천합니다. 
 
 5. Text With (link_threshold=0.9)
 
 ![image](https://github.com/hyeokson/opensw23-gitgit/assets/127181634/733832c1-faa5-4885-ae49-e79e10796139)
 
-link_threshold 변수는 문자들이 하나의 단어로 Detection이 될 때 기준이 되는 threshold 값이다. Original link_threshold값은 0.4이고, 실험에서는 0.9로 설정하고 실행했다. 위의 그래프를 보면 link_threshold값을 높였을 때 original 값일 때보다 Detection Box의 수가 늘어난다는 것을 알 수 있다. 하나의 단어로 Detection 되는 기준이 높아졌기 때문에 각 문자들 간의 거리가 매우 가깝지 않은 이상 개별적인 단어로 Detection 된다는 것을 알 수 있다. 따라서 문자들 간 간격이 기본적으로 넓다면 link_threshold값을 낮추는 것이 좋고, 간격이 좁지만 띄어쓰기가 잘 되어 있다면 link_threshold값을 높이는 것을 추천한다.
+link_threshold 변수는 문자들이 하나의 단어로 Detection이 될 때 기준이 되는 threshold 값입니다. Original link_threshold값은 0.4이고, 실험에서는 0.9로 설정하고 실행했습니다. 위의 그래프를 보면 link_threshold값을 높였을 때 original 값일 때보다 Detection Box의 수가 늘어난다는 것을 알 수 있습니다. 하나의 단어로 Detection 되는 기준이 높아졌기 때문에 각 문자들 간의 거리가 매우 가깝지 않은 이상 개별적인 단어로 Detection 된다는 것을 알 수 있습니다. 따라서 문자들 간 간격이 기본적으로 넓다면 link_threshold값을 낮추는 것이 좋고, 간격이 좁지만 띄어쓰기가 잘 되어 있다면 link_threshold값을 높이는 것을 추천합니다.
 
 <결론>
 
-Horizontal, curved text들은 Detection이 훌륭하게 수행되지만, 곡면에 위치한 text, horizontal text들은 Detection이 아예 안되거나, 같은 단어로 묶이지 않는 경우가 많으므로 이 부분에 대한 개선이 필요하다고 생각한다. 
+Horizontal, curved text들은 Detection이 훌륭하게 수행되지만, 곡면에 위치한 text, horizontal text들은 Detection이 아예 안되거나, 같은 단어로 묶이지 않는 경우가 많으므로 이 부분에 대한 개선이 필요하다고 생각합니다. 
 
-그리고 CRAFT text detector를 사용할 때, 확실하게 text로 보이는 text들만 Detection하고 싶다면 text_threshold 값을 높여서 사용하는 것이 좋고, 가능한 한 모든 text들을 Detection하고 싶다면 text_threshold 값을 낮추는 것을 추천한다. 또한, 문자들 간 간격이 기본적으로 넓다면 link_threshold값을 낮추는 것이 좋고, 간격이 좁지만 띄어쓰기가 잘 되어 있다면 link_threshold값을 높이는 것을 추천한다.
+그리고 CRAFT text detector를 사용할 때, 확실하게 text로 보이는 text들만 Detection하고 싶다면 text_threshold 값을 높여서 사용하는 것이 좋고, 가능한 한 모든 text들을 Detection하고 싶다면 text_threshold 값을 낮추는 것을 추천합니다. 또한, 문자들 간 간격이 기본적으로 넓다면 link_threshold값을 낮추는 것이 좋고, 간격이 좁지만 띄어쓰기가 잘 되어 있다면 link_threshold값을 높이는 것을 추천합니다.
 
 
 ## • Installation
