@@ -22,6 +22,8 @@ text detector에 적용된 CRAFT 모델은 Scene text detection, 즉 문자의 �
 
 Model을 사용했을 때 출력되는 Detection Box coordinates, Score map은 생략했습니다.
 
+original setting, text_threshold 값을 0.9로 설정, link_threshold 값을 0.9로 설정했을 때의 output을 정리했습니다.
+
 ### • Input(data 1)
 
 ![KakaoTalk_20230607_223520892_06](https://github.com/hyeokson/opensw23-gitgit/assets/127181634/9818d2c2-49b7-4652-8821-c30ec59fe480)
