@@ -215,6 +215,7 @@ original setting, text_threshold 값을 0.9로 설정, link_threshold 값을 0.9
 ![image](https://github.com/hyeokson/opensw23-gitgit/assets/127181634/15dbf48e-f48d-4d80-b9e2-42274cbe1960)
 
 수평방향의 텍스트는 단어가 굉장히 많음에도 1개의 단어를 빼고는 Text Detection을 잘 수행하는 것을 볼 수 있습니다. 30도 정도 기울어진 텍스트 또한 2개 정도의 단어 빼고는 Text Detection을 잘 수행하는 것을 볼 수 있습니다. 보통은 텍스트들이 가로방향으로 되어 있기 때문에 Model을 학습할 때 사용된 data set도 가로방향이 많았을 것이고 이러한 이유 때문에 가로방향의 텍스트들은 Text Detection이 잘 수행되는 것이라고 추측할 수 있습니다.
+
 2. Vertical Text
 
 ![image](https://github.com/hyeokson/opensw23-gitgit/assets/127181634/fa6bd7b0-76f3-4bad-8c78-bb7162f107ec)
