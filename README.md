@@ -20,7 +20,7 @@ text detector에 적용된 CRAFT 모델은 Scene text detection, 즉 문자의 �
 
 총 11개의 데이터를 실행했고 Model은 General Model을 사용했습니다.
 
-Model을 사용했을때 출력되는 Detection Box coordinates, Score map은 생략했습니다.
+Model을 사용했을 때 출력되는 Detection Box coordinates, Score map은 생략했습니다.
 
 ### • Input(data 1)
 
