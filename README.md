@@ -18,10 +18,13 @@ text detector에 적용된 CRAFT 모델은 Scene text detection, 즉 문자의 �
     
 ## • Results
 
+총 12개의 데이터를 실행해 보았습니다.
+Model은 General Model을 사용했습니다.
+
 ### • Input
 ![AKR20200325003700091_01_i_P4](https://github.com/hyeokson/opensw23-gitgit/assets/127181634/f574204e-643e-43ef-afb0-35caed9c6f22)
 
-### • Output (General Model 사용)
+### • Output
 #### <result image, score map, bounding box coordinates>
 
 ![res_AKR20200325003700091_01_i_P4](https://github.com/hyeokson/opensw23-gitgit/assets/127181634/111ea7c7-4b23-419e-ac87-9a7b0aad5f96)
@@ -212,6 +215,8 @@ text detector에 적용된 CRAFT 모델은 Scene text detection, 즉 문자의 �
 </details>
 
 ## • Analysis/Visualization
+
+
 
 ## • Installation
 
