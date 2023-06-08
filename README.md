@@ -298,7 +298,9 @@ ex) python test.py --trained_model=craft_ic15_20k.pth --test_folder=sample_input
 ```
 result image는 default로 `result` 폴더에 저장됩니다.
 
-sample input과 output 이미지는 각각 sample_input, sample_output 폴더에 있습니다.
+sample input data는 sample_input 폴더에 있습니다.
+
+sample output data는 sample_result, sample_result(text_threshold), sample_result(link_threshold) 폴더에 들어있고 각각 original setting, text_threshold=0.9, link_threshold=0.9 를 적용한 결과 data가 들어있습니다.
 ### Arguments
 * `--trained_model`: pretrained model
 * `--text_threshold`: text confidence threshold
