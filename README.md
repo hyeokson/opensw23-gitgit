@@ -318,4 +318,5 @@ sample output data는 sample_result, sample_result(text_threshold), sample_resul
 * `--refiner_model`: pretrained refiner model
 
 ## • Presentation
-   
+
+presentation link : https://youtu.be/TClRPzoOfvo
